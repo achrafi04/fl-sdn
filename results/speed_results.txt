@@ -1,0 +1,11 @@
+MESURE RAPIDITE — temps de detection selon nb de switches
+Trafic total : 378113 flux (CICIDS2017 test)
+
+1 switch   | 378113 flux | 166.4 ms
+2 switches | 189056 flux |  75.2 ms
+3 switches | 126037 flux |  49.8 ms
+4 switches |  94528 flux |  30.2 ms  <- optimum
+5 switches |  75622 flux |  34.6 ms  <- remonte (contention CPU)
+
+RECOMMANDATION : il existe un nombre optimal de switches (~4 ici).
+Au-dela, la division ne gagne plus rien (contention + overhead).
