@@ -57,3 +57,7 @@ for epoch in range(EPOCHS):
           f"test acc {acc*100:.2f}% | {time.time()-t0:.1f}s")
 
 print("\nLe modele splitte a appris (contrairement a la demo RNN figee).")
+# Sauvegarder le modele entraine
+torch.save({"switch": switch.state_dict(), "server": server.state_dict()},
+           "../results/split_model_trained.pt")
+print("Modele entraine sauvegarde dans results/split_model_trained.pt")
