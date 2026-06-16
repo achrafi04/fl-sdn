@@ -13,7 +13,7 @@ import torch
 import torch.nn as nn
 from split_model import SwitchPart, ServerPart
 
-HOST, PORT = "127.0.0.1", 9000
+HOST, PORT = "10.0.0.1", 9000
 
 # --- arguments ---
 client_id = sys.argv[1] if len(sys.argv) > 1 else "1"

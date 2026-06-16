@@ -7,8 +7,8 @@ import numpy as np
 import torch
 from split_model import SwitchPart, ServerPart
 
-HOST, PORT = "127.0.0.1", 9000
-N_CLIENTS = 2
+HOST, PORT = "0.0.0.0", 9000
+N_CLIENTS = 4
 ROUNDS = 5
 
 def send_obj(conn, obj):
